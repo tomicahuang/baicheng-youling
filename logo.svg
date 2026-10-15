@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 670 260" width="670" height="260">
+  <title>百程有伶</title>
+  <rect x="1.5" y="1.5" width="667" height="257" rx="18" fill="#FFFDF7" stroke="#C9A24B" stroke-width="3"/>
+  <g transform="translate(30 15)">
+  <g transform="translate(72 88) scale(0.8)">
+    <circle r="90" fill="#E3BC5A" stroke="#A87B1F" stroke-width="4"/>
+    <circle r="77" fill="none" stroke="#A87B1F" stroke-width="2"/>
+    <rect x="-27" y="-27" width="54" height="54" fill="none" stroke="#A87B1F" stroke-width="2"/>
+    <rect x="-19" y="-19" width="38" height="38" fill="#FFFFFF" stroke="#A87B1F" stroke-width="3"/>
+    <g fill="#A87B1F">
+      <rect x="-4" y="-62" width="8" height="22"/>
+      <rect x="-4" y="40" width="8" height="22"/>
+      <rect x="40" y="-4" width="22" height="8"/>
+      <rect x="-62" y="-4" width="22" height="8"/>
+    </g>
+  </g>
+  <g transform="translate(170 130) scale(0.88)">
+    <circle r="92" fill="#D9AE45" stroke="#A87B1F" stroke-width="4"/>
+    <circle r="79" fill="none" stroke="#A87B1F" stroke-width="2"/>
+    <rect x="-27" y="-27" width="54" height="54" fill="none" stroke="#A87B1F" stroke-width="2"/>
+    <rect x="-19" y="-19" width="38" height="38" fill="#FFFFFF" stroke="#A87B1F" stroke-width="3"/>
+    <g font-family="'Noto Serif TC','Source Han Serif TC','PMingLiU','MingLiU',serif" font-weight="700" font-size="40" fill="#9E2421" text-anchor="middle" dominant-baseline="central">
+      <text x="0" y="-52">百</text>
+      <text x="52" y="0">程</text>
+      <text x="0" y="52">有</text>
+      <text x="-52" y="0">伶</text>
+    </g>
+  </g>
+  <g transform="translate(58 196)">
+    <ellipse cx="0" cy="-6" rx="16" ry="13" fill="#EFCB6A" stroke="#A87B1F" stroke-width="2"/>
+    <path d="M-38,-12 Q-34,-2 -24,2 L24,2 Q34,-2 38,-12 Q36,14 0,19 Q-36,14 -38,-12 Z" fill="#D9AE45" stroke="#A87B1F" stroke-width="2" stroke-linejoin="round"/>
+    <rect x="-30" y="22" width="60" height="3" rx="1.5" fill="#B8312F"/>
+  </g>
+  <text x="280" y="118" dominant-baseline="central" font-family="'Noto Serif TC','Source Han Serif TC','PMingLiU','MingLiU',serif" font-weight="700" font-size="76" letter-spacing="6" fill="#B8312F">百程有伶</text>
+  </g>
+</svg>

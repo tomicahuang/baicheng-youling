@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>百程有伶</title>
+<meta name="description" content="百程有伶：柏程與宥伶，攜手合作，百事皆成。">
+<link rel="icon" href="logo-icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="logo-icon.svg">
+<style>
+  :root {
+    --bg: #FFFFFF; --fg: #2B2B2B; --sub: #6B6B6B; --line: #EADFC6;
+    --red: #B8312F; --gold: #C9A24B; --card: #FFFBF2;
+  }
+  body.dark {
+    --bg: #121212; --fg: #F1E9D8; --sub: #B9AE98; --line: #3A3326;
+    --red: #E2574F; --gold: #D9B45E; --card: #1C1A16;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font-family: "Noto Serif TC", "PMingLiU", "Microsoft JhengHei", serif;
+    transition: background .2s, color .2s;
+  }
+  header {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 12px; padding: 14px 20px; border-bottom: 1px solid var(--line);
+  }
+  header img { height: 52px; width: auto; display: block; }
+  #theme {
+    border: 1px solid var(--gold); background: transparent; color: var(--fg);
+    border-radius: 999px; padding: 6px 14px; font-size: 14px; cursor: pointer;
+    font-family: "Microsoft JhengHei", sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 48px 20px 64px; text-align: center; }
+  .hero-icon { width: 120px; height: 120px; }
+  h1 { color: var(--red); font-size: clamp(32px, 7vw, 52px); letter-spacing: .15em; margin: 20px 0 8px; }
+  .slogan { color: var(--gold); font-size: clamp(18px, 4vw, 24px); letter-spacing: .3em; margin: 0 0 40px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+    padding: 24px; line-height: 1.9; font-size: 17px; text-align: left;
+  }
+  .card b { color: var(--red); }
+  footer { text-align: center; color: var(--sub); font-size: 13px; padding: 24px; border-top: 1px solid var(--line); }
+</style>
+</head>
+<body>
+  <header>
+    <img src="logo-bar.svg" alt="百程有伶">
+    <button id="theme" type="button">黑底</button>
+  </header>
+
+  <main>
+    <img class="hero-icon" src="logo-icon.svg" alt="">
+    <h1>百程有伶</h1>
+    <p class="slogan">百事皆成・所願有靈</p>
+    <div class="card">
+      <p>「<b>百程有伶</b>」取自<b>柏程</b>與<b>宥伶</b>兩人的名字，諧音「<b>百成有靈</b>」。</p>
+      <p>兩人攜手合作，一同打拼，祝願百事皆成、財源廣進。</p>
+    </div>
+  </main>
+
+  <footer>© <span id="year"></span> 百程有伶</footer>
+
+<script>
+  const btn = document.getElementById('theme');
+  function apply(dark) {
+    document.body.classList.toggle('dark', dark);
+    btn.textContent = dark ? '白底' : '黑底';
+  }
+  apply(localStorage.getItem('byl-theme') === 'dark');
+  btn.addEventListener('click', () => {
+    const dark = !document.body.classList.contains('dark');
+    localStorage.setItem('byl-theme', dark ? 'dark' : 'light');
+    apply(dark);
+  });
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
